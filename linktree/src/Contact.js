@@ -9,10 +9,10 @@ const Footer = () => {
                     <img src={zuriLogo} alt="" />
                 </div>
                 <div className="zuriText">
-                    <h3>HNG    Internship 9 Frontend Task</h3>
+                    <p>HNG    Internship 9 Frontend Task</p>
                 </div>
                 <div className="ingressiveLogo">
-                    <img src={ingressiveLogo} alt="" />
+                    <img src={ingressiveLogo} alt="ingressive Logo" />
                 </div>
             </div>
         </div>

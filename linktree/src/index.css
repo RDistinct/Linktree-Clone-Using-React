@@ -1,13 +1,212 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  
+ 
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  box-sizing: border-box;}
+
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    sans-serif; */
+    font-family: 'Inter';
+    min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 90%;
+  margin: auto;
+
 }
+.profileContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+.profileContainer .profileElements{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.profileElements img{
+  border-radius: 50px;
+    height: 88px;
+    width: 88px;
+    margin-bottom: 12px;
+    object-fit: cover;
+    
+}
+
+@media (max-width:720px){
+  .profileContainer .shareBtn{
+    display: none;
+  }
+}
+
+
+@media (min-width:720px) {
+  .profileContainer .shareBtn{
+    position:absolute;
+    /*left: 12.5%;*/
+    right: 11.53%;
+    top: 14.95%;
+    cursor: pointer;
+  }
+}
+
+.profileContainer .mobileBtn{
+  position:absolute;
+  /*left: 12.5%;*/
+  right: 11.53%;
+  top: 14.95%;
+  cursor: pointer;
+}
+
+@media (min-width:720px) {
+  .profileContainer .mobileBtn{
+    display: none;
+  }
+}
+
+
+
+.linksSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  height: auto;
+  width: 100%;
+  
+}
+.linksSection .linkElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.linksSection .linkElements a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #101828;
+  background-color: #eaecf0;
+  text-decoration: none;
+  font-size: 16px;
+  height: 76px;
+  width: 100%;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+}
+.linksSection .linkElements a:hover{
+  background-color:#d0d5dd;
+}
+.mediaContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    width: 100%
+}
+.mediaContainer .socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+  height: 24px;
+  width: 80%;
+}
+
+.footerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 720px){
+  .footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: auto;
+  }
+}
+
+
+.footerContainer .footerItems{
+    align-items: flex-start;
+    border-top: 1px solid #eaecf0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 132px;
+    justify-content: center;
+    padding: 32px 0 0;
+    width: 90%;
+  }
+
+
+
+@media (min-width: 720px){
+  .footerContainer .footerItems {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-top: 1px solid #eaecf0;
+    box-sizing: border-box;
+    height: 64px;
+    justify-content: space-between;
+    margin: 0 10px;
+    width: 80%;
+  }
+}
+
+.footerContainer .footerItems .zuriLogo{
+  font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+}
+
+.footerContainer .footerItems .zuriText{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.footerContainer .footerItems .ingressiveLogo img{
+  height: 32px;
+  margin: 0;
+  width: 132.13px;
+}
+/* @media (min-width:720px) {
+  .footerContainer .footerItems .ingressiveLogo img{
+    height: 32px;
+    margin: 0;
+    width: 132.13px;
+  }
+} */
+
+
+

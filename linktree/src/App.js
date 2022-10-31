@@ -1,6 +1,7 @@
 import './App.css';
 import Profile from './Profile';
 import Links from './Links';
+import Social from './Social';
 import Contact from './Contact'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
      <div className="container">
       <Profile/>  {/**oor <Profile></Profile> */}
       <Links/>
+      <Social></Social>
       <Contact></Contact>
      </div>
     </div>
